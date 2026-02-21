@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Areesha Memon | Frontend Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0a0a0f;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 40px;
+    background:rgba(10,10,20,0.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 0 15px #00f7ff;
+}
+
+nav h2{
+    color:#00f7ff;
+    text-shadow:0 0 10px #00f7ff;
+}
+
+nav a{
+    color:#fff;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f7ff;
+    text-shadow:0 0 10px #00f7ff;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    min-height:100vh;
+    padding:120px 10%;
+}
+
+/* ===== HOME ===== */
+.home{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.home-text h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.home-text span{
+    color:#00f7ff;
+    text-shadow:0 0 15px #00f7ff;
+}
+
+.home-text p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:0 0 30px #00f7ff;
+    transition:0.4s;
+}
+
+.profile:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 60px #00f7ff;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.socials{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid #00f7ff;
+    color:#00f7ff;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    background:#00f7ff;
+    color:#000;
+    box-shadow:0 0 20px #00f7ff;
+}
+
+/* ===== COMMON CARDS ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    padding:25px;
+    border-radius:15px;
+    background:#111;
+    box-shadow:0 0 15px #00f7ff;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px #00f7ff;
+}
+
+/* ===== HEADINGS ===== */
+section h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#00f7ff;
+    text-shadow:0 0 15px #00f7ff;
+}
+
+/* ===== CONTACT ===== */
+.contact p{
+    text-align:center;
+    margin-top:30px;
+    font-size:1.2rem;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#05050a;
+    box-shadow:0 0 10px #00f7ff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+    <h2>Areesha</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- ===== HOME ===== -->
+<section id="home" class="home">
+    <div class="home-text">
+        <h1>Hi, I'm <span>Areesha Memon</span></h1>
+        <p>Frontend Web Developer creating modern, responsive  websites.</p>
+        <p>Email: <b>areeshamemon336@gmail.com</b></p>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/areesha-memon-3770823a9?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">in</a>
+            <a href="https://www.fiverr.com/s/akLmrLg" target="_blank">fi</a>
+        </div>
+    </div>
+
+    <div class="profile">
+        <!-- Replace src with your own image -->
+        <img src="c:\Users\Halar Memon\Documents\IMG-20260212-WA0105.jpg" alt="Profile Picture">
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card"> i will build a E-commerce Website</div>
+        <div class="card"> i will build a School Website</div>
+        <div class="card"> i will build a Shop Website</div>
+        <div class="card"> i will build a Online Business Website</div>
+        <div class="card"> i will build a Restaurant Website</div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <h2>Projects Done by me</h2>
+    <div class="grid">
+        <div class="card"> A Website</div>
+        <div class="card">Online E-commerce Website</div>
+        <div class="card">Portfolio Website</div>
+        <div class="card">Quiz Application</div>
+       <div class="card">login forms</div>
+
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email me at: <b>areeshamemon336@gmail.com</b></p>
+</section>
+
+<footer>
+    © 2026 Areesha Memon 
+</footer>
+
+<script>
+// Small glow pulse effect
+const cards = document.querySelectorAll('.card');
+cards.forEach(card=>{
+    card.addEventListener('mouseover',()=>{
+        card.style.boxShadow = "0 0 60px #00f7ff";
+    });
+    card.addEventListener('mouseout',()=>{
+        card.style.boxShadow = "0 0 15px #00f7ff";
+    });
+});
+</script>
+
+</body>
+</html>
