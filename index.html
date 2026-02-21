@@ -25,7 +25,7 @@ nav{
     position:fixed;
     top:0;
     width:100%;
-    padding:15px 40px;
+    padding:16px 40px;   /* Desktop default */
     background:rgba(10,10,20,0.9);
     display:flex;
     justify-content:space-between;
@@ -39,8 +39,9 @@ nav h2{
     text-shadow:0 0 10px #00f7ff;
 }
 
-nav .links{
+nav .nav-links{
     display:flex;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -135,7 +136,7 @@ section{
 /* ===== GRID & CARDS ===== */
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
     gap:25px;
     margin-top:40px;
 }
@@ -180,10 +181,14 @@ footer{
 
 /* ================= RESPONSIVE ================= */
 
-/* Tablets */
+/* Large tablets */
 @media(max-width:992px){
+    nav{
+        padding:14px 24px;
+    }
+
     section{
-        padding:120px 6%;
+        padding:120px 7%;
     }
 
     .home-text h1{
@@ -196,21 +201,20 @@ footer{
     }
 }
 
-/* Mobiles */
+/* Tablets & Mobiles */
 @media(max-width:768px){
     nav{
         flex-direction:column;
+        padding:12px 16px;
         gap:10px;
-        padding:15px 20px;
     }
 
-    nav .links{
-        flex-wrap:wrap;
+    nav .nav-links{
         justify-content:center;
     }
 
     nav a{
-        margin:10px;
+        margin:8px 12px;
     }
 
     .home{
@@ -232,8 +236,12 @@ footer{
     }
 }
 
-/* Small Phones */
+/* Small phones */
 @media(max-width:480px){
+    nav{
+        padding:10px 12px;
+    }
+
     section{
         padding:100px 5%;
     }
@@ -243,8 +251,8 @@ footer{
     }
 
     .card{
-        font-size:0.95rem;
         padding:20px;
+        font-size:0.95rem;
     }
 
     footer{
@@ -259,7 +267,7 @@ footer{
 <!-- ===== NAV ===== -->
 <nav>
     <h2>Areesha</h2>
-    <div class="links">
+    <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
